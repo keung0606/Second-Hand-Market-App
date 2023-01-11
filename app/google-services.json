@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "520582674382",
+    "project_id": "second-market-app-b5044",
+    "storage_bucket": "second-market-app-b5044.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520582674382:android:b1baf08f6bb8240bff9d9f",
+        "android_client_info": {
+          "package_name": "com.example.second_handmarketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAesQn7XlWe7lbIebin9CvgBaxRuJyy8vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520582674382:android:b8690c4b56d0eff8ff9d9f",
+        "android_client_info": {
+          "package_name": "com.example.secondmarketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAesQn7XlWe7lbIebin9CvgBaxRuJyy8vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
