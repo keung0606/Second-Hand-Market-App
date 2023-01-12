@@ -1,4 +1,4 @@
-package com.example.second_handmarketapp.adaptes;
+package com.example.second_handmarketapp;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,33 +10,43 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.second_handmarketapp.R;
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
 public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder> {
 
-    private List<SecondAdapter> secondAdapterList;
     private Context context;
+    private List<SecondMod> secondModList;
 
-    public SecondAdapter(List<SecondAdapter> secondAdapterList) {
-        this.secondAdapterList = secondAdapterList;
+
+    public SecondAdapter(Context context,List<SecondMod> secondModList) {
+        this.secondModList = secondModList;
+        this.context = context;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.sechand_product,parent,false));
+        ViewHolder viewHolder = new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.sechand_product, parent, false));
+        return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Glide.with(context).load(secondModList.get(position).getSecImg()).into(holder.popImg);
+        holder.name.setText(secondModList.get(position).getName());
+        holder.des.setText(secondModList.get(position).getDes());
+        holder.score.setText(secondModList.get(position).getScore());
+        holder.dis.setText(secondModList.get(position).getDis());
 
     }
 
+
+
     @Override
     public int getItemCount() {
-        return secondAdapterList.size();
+        return secondModList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

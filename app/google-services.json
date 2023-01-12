@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "520582674382",
-    "project_id": "second-market-app-b5044",
-    "storage_bucket": "second-market-app-b5044.appspot.com"
+    "project_number": "186697957123",
+    "firebase_url": "https://second-market-app2-default-rtdb.firebaseio.com",
+    "project_id": "second-market-app2",
+    "storage_bucket": "second-market-app2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:520582674382:android:b1baf08f6bb8240bff9d9f",
+        "mobilesdk_app_id": "1:186697957123:android:dc34df00fd0d09b3167336",
         "android_client_info": {
-          "package_name": "com.example.second_handmarketapp"
+          "package_name": "com.SecondMarketApp.shopping"
         }
       },
       "oauth_client": [
         {
-          "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+          "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAesQn7XlWe7lbIebin9CvgBaxRuJyy8vY"
+          "current_key": "AIzaSyDuBHQ5grz4Ur4mRXHsEtGi83afF4n03-U"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+              "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -36,27 +37,56 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:520582674382:android:b8690c4b56d0eff8ff9d9f",
+        "mobilesdk_app_id": "1:186697957123:android:a4d9304dadaebcd6167336",
         "android_client_info": {
-          "package_name": "com.example.secondmarketapp"
+          "package_name": "com.example.second_handmarketapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+          "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAesQn7XlWe7lbIebin9CvgBaxRuJyy8vY"
+          "current_key": "AIzaSyDuBHQ5grz4Ur4mRXHsEtGi83afF4n03-U"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "520582674382-an0e91uh5vt719a5jqgelh3t3d1fmmeb.apps.googleusercontent.com",
+              "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186697957123:android:45615ab55b6cf12d167336",
+        "android_client_info": {
+          "package_name": "com.example.secondmarketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuBHQ5grz4Ur4mRXHsEtGi83afF4n03-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186697957123-hpq2a4sdmeh7ugg4auvj1832urapjpp7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
