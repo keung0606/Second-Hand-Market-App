@@ -1,6 +1,8 @@
 package com.example.second_handmarketapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,12 +35,23 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Glide.with(context).load(secondModList.get(position).getSecImg()).into(holder.popImg);
         holder.name.setText(secondModList.get(position).getName());
         holder.des.setText(secondModList.get(position).getDes());
         holder.score.setText(secondModList.get(position).getScore());
         holder.dis.setText(secondModList.get(position).getDis());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,ViewProducts.class);
+                intent.putExtra("type",secondModList.get(position).getType());
+                context.startActivity(intent);
+            }
+        });
+
+
 
     }
 
