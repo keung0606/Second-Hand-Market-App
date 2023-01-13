@@ -24,7 +24,7 @@ import java.util.HashMap;
 public class InfoProduct extends AppCompatActivity {
 
     ImageView info_img;
-    TextView price,score,des;
+    TextView name,price,score,des;
     Button add;
     ViewMod viewMod = null;
 
@@ -49,12 +49,14 @@ public class InfoProduct extends AppCompatActivity {
         score = findViewById(R.id.info_score);
         des= findViewById(R.id.info_des);
         info_img = findViewById(R.id.info_img);
+        name = findViewById(R.id.info_name);
 
         f = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
 
         if(viewMod != null){
             Glide.with(getApplicationContext()).load(viewMod.getView_img()).into(info_img);
+            name.setText(viewMod.getName());
             score.setText(viewMod.getScore());
             des.setText(viewMod.getDes());
             price.setText("The price is $" + viewMod.getPrice());
