@@ -72,6 +72,14 @@
         android:id="@+id/btn_chat"
         android:onClick="onClick"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Find"
+        android:id="@+id/btn_find"
+        android:onClick="find"/>
+
 
 
 

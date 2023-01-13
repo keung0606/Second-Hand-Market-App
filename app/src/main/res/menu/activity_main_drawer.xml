@@ -16,7 +16,10 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/category" />
 
-
+        <item
+            android:id="@+id/nav_sechand"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Knowledge of Second items" />
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_menu_slideshow"

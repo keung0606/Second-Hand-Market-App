@@ -3,6 +3,7 @@ package com.example.second_handmarketapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class InfoProduct extends AppCompatActivity {
     ImageView info_img;
     TextView name,price,score,des;
     Button add;
+    Button find;
     ViewMod viewMod = null;
 
     FirebaseFirestore f;
@@ -62,7 +64,11 @@ public class InfoProduct extends AppCompatActivity {
             price.setText("The price is $" + viewMod.getPrice());
 
 
+
+
         }
+
+
 
 
 
@@ -75,8 +81,6 @@ public class InfoProduct extends AppCompatActivity {
 
             }
         });
-
-
 
 
 
@@ -110,6 +114,8 @@ public class InfoProduct extends AppCompatActivity {
                         finish();
                     }
                 });
+
+
 
     }
 }

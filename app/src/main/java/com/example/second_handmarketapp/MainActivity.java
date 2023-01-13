@@ -27,13 +27,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.bar_home);
         progressBar.setVisibility(View.GONE);
 
-        //if(auth.getCurrentUser() != null){progressBar.setVisibility(View.VISIBLE);
-            //startActivity((new Intent(MainActivity.this,frontPage.class)));
-
-            //Toast.makeText(this, "Already login.", Toast.LENGTH_SHORT).show();
-            //finish();
-        //}
-
 
     }
 
@@ -47,10 +40,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Register.class));
     }
 
-    public void onClick(View v){
+    public void find(View v){
 
-        startActivity(new Intent(MainActivity.this, chatBox.class));
+        startActivity(new Intent(MainActivity.this, MapActivity.class));
     }
+
+
 
 
 }

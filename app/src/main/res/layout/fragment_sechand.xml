@@ -5,10 +5,42 @@
     android:layout_height="match_parent"
     tools:context=".sechandFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="No Products Now" />
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benefits of second hand products"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Save money
+
+The greatest benefit of second-hand items is saving money. Now in the second-hand economy in the market, the price of buying and selling second-hand products is often much cheaper than the original price, and some are even free. Second-hand items allow you to meet your needs at low prices. In fact, the quality of many second-hand items these days is no different from new ones, so the only difference between second-hand items and new ones is the price."
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Do your bit for the planet
+
+Many people don't think about the simple act of buying a piece of clothing, the production, transportation, packaging, and final disposal in landfills, all of which damage the environment. We all seek newness and love to dress up, and second-hand items can also meet this need. This can not only reduce the amount of waste disposal, but also reduce the demand in the market, and thus reduce the resources required for production, achieving waste reduction at the source."
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
 
 </FrameLayout>
