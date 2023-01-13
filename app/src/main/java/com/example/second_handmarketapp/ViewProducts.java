@@ -60,7 +60,7 @@ public class ViewProducts extends AppCompatActivity {
                 }
             });
 
-            }
+        }
 
         if (type != null && type.equalsIgnoreCase("household")) {
             firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "household").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -76,40 +76,64 @@ public class ViewProducts extends AppCompatActivity {
 
                 }
             });
+        }
 
 
+        if (type != null && type.equalsIgnoreCase("other")) {
+            firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "other").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
-                if (type != null && type.equalsIgnoreCase("other")) {
-                    firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "other").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                        ViewMod viewMod = documentSnapshot.toObject(ViewMod.class);
+                        viewModList.add(viewMod);
+                        viewAdapter.notifyDataSetChanged();
 
-                            for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
-                                ViewMod viewMod = documentSnapshot.toObject(ViewMod.class);
-                                viewModList.add(viewMod);
-                                viewAdapter.notifyDataSetChanged();
+                    }
 
-                            }
+                }
+            });
+        }
+
+        if (type != null && type.equalsIgnoreCase("game")) {
+            firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "game").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                        ViewMod viewMod = documentSnapshot.toObject(ViewMod.class);
+                        viewModList.add(viewMod);
+                        viewAdapter.notifyDataSetChanged();
+
+                    }
+
+                }
+            });
+        }
+
+
+            if (type != null && type.equalsIgnoreCase("clothing")) {
+                firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "clothing").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+
+                        for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                            ViewMod viewMod = documentSnapshot.toObject(ViewMod.class);
+                            viewModList.add(viewMod);
+                            viewAdapter.notifyDataSetChanged();
 
                         }
-                    });
-                }
 
-                    if (type != null && type.equalsIgnoreCase("game")) {
-                        firebaseFirestore.collection("AllSecondProducts").whereEqualTo("type", "game").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-
-                                for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
-                                    ViewMod viewMod = documentSnapshot.toObject(ViewMod.class);
-                                    viewModList.add(viewMod);
-                                    viewAdapter.notifyDataSetChanged();
-
-                                }
-
-                            }
-                        });
                     }
+                });
+
+
+
+
+
+
+
+                    
         }
     }
 }

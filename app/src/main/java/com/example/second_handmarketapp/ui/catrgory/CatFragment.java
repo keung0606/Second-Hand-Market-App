@@ -1,5 +1,6 @@
 package com.example.second_handmarketapp.ui.catrgory;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.second_handmarketapp.CatModel;
 import com.example.second_handmarketapp.CatRecAdapter;
+import com.example.second_handmarketapp.Login;
 import com.example.second_handmarketapp.R;
+import com.example.second_handmarketapp.Register;
 import com.example.second_handmarketapp.SecondAdapter;
 import com.example.second_handmarketapp.SecondMod;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -66,7 +69,11 @@ public class CatFragment extends Fragment {
                 });
 
 
+
+
+
         return  root;
+
     }
 
 }

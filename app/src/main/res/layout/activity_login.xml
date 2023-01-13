@@ -72,4 +72,7 @@
         android:id="@+id/bar_log"
         android:layout_gravity="center"/>
 
+
+
+
 </LinearLayout>

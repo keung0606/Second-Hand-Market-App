@@ -38,9 +38,16 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.ViewHolder> {
         Glide.with(context).load(viewModList.get(position).getView_img()).into(holder.view_img);
         holder.name.setText(viewModList.get(position).getName());
         holder.des.setText(viewModList.get(position).getDes());
-        holder.price.setText(viewModList.get(position).getPrice());
+        holder.price.setText("$ "+viewModList.get(position).getPrice());
 
-
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,InfoProduct.class);
+                intent.putExtra("info",viewModList.get(position));
+                context.startActivity(intent);
+            }
+        });
 
     }
 

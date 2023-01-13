@@ -1,6 +1,8 @@
 package com.example.second_handmarketapp;
 
-public class ViewMod {
+import java.io.Serializable;
+
+public class ViewMod implements Serializable {
     String name,des,price,score,view_img, type;
 
     public ViewMod(){

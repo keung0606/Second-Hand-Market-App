@@ -1,6 +1,8 @@
 package com.example.second_handmarketapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,10 +35,19 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HomeAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HomeAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         Glide.with(context).load(secondCatList.get(position).getCatImg()).into(holder.catImg);
         holder.name.setText(secondCatList.get(position).getName());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,ViewProducts.class);
+                intent.putExtra("type",secondCatList.get(position).getType());
+                context.startActivity(intent);
+            }
+        });
 
     }
 

@@ -48,6 +48,12 @@ public class Login extends AppCompatActivity {
     }
 
 
+    public void Q_ask(View v){
+
+        startActivity(new Intent(Login.this, chatBox.class));
+    }
+
+
 
     public void llog(View v){
         logUser();

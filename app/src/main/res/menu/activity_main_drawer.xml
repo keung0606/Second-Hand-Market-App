@@ -39,5 +39,11 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/profile" />
 
+
+
+
+
     </group>
+
+
 </menu>
