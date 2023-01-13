@@ -48,10 +48,12 @@ public class Login extends AppCompatActivity {
     }
 
 
-    public void Q_ask(View v){
+    public void Map(View v){
 
-        startActivity(new Intent(Login.this, chatBox.class));
+        startActivity(new Intent(Login.this, MapActivity.class));
     }
+
+
 
 
 

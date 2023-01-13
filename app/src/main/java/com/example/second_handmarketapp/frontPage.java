@@ -3,6 +3,7 @@ package com.example.second_handmarketapp;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -21,12 +22,15 @@ public class frontPage extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityFrontPageBinding binding;
 
+    Button btn_Map;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = ActivityFrontPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         setSupportActionBar(binding.appBarFrontPage.toolbar);
         binding.appBarFrontPage.fab.setOnClickListener(new View.OnClickListener() {
@@ -56,10 +60,7 @@ public class frontPage extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_front_page);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+
+
+
 }

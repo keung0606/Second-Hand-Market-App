@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.bar_home);
         progressBar.setVisibility(View.GONE);
 
-        if(auth.getCurrentUser() != null){progressBar.setVisibility(View.VISIBLE);
-            startActivity((new Intent(MainActivity.this,frontPage.class)));
+        //if(auth.getCurrentUser() != null){progressBar.setVisibility(View.VISIBLE);
+            //startActivity((new Intent(MainActivity.this,frontPage.class)));
 
-            Toast.makeText(this, "Already login.", Toast.LENGTH_SHORT).show();
-            finish();
-        }
+            //Toast.makeText(this, "Already login.", Toast.LENGTH_SHORT).show();
+            //finish();
+        //}
 
 
     }
